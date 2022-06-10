@@ -4,11 +4,7 @@ from selenium.webdriver.common.by import By
 
 service_obj = Service("D:\\Selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service_obj)
-driver.get("https://themanifest.com/in/it-services/companies/bengaluru")
 element_list = []
-lnk = driver.find_elements(By.TAG_NAME, "a")
-images = driver.find_elements(By.CLASS_NAME, "provider-logo")
-
 
 for page in range(0, 10, 1):
     page_url = "https://themanifest.com/in/it-services/companies/bengaluru?page=" + str(page)
